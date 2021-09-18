@@ -49,7 +49,7 @@ export default (props) => {
 
      const nostring = (articleContent)
 //THIS IS WHERE THE ISSUE LIES WITH THE P TAGS AUTO GENERATING
-     axios.post(`http://localhost:4000/api/cities/${props.match.params.id}`, {
+     axios.post(`${process.env.REACT_APP_SERVER_URL}/api/cities/${props.match.params.id}`, {
        content:articleContent
      })
      .then((response)=>{

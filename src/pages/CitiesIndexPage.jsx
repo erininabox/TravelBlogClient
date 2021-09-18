@@ -3,10 +3,8 @@ import CityModel from "../models/CityModel";
 import CityShowPage from "../pages/CityShowPage";
 import { Link } from "react-router-dom";
 import IndexCarousel from "../partials/IndexCarousel";
-// const axios = require('axios').default;
-import axios from "axios";
-import Header from "../components/Header";
-import CreateCity from "../pages/CreateCity"
+
+
 
 // Steps to render the list of cities
 // - Create a component for each city

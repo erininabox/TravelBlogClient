@@ -22,7 +22,7 @@ class CreateCity extends Component{
         console.log("form was submitted");
         // start out by making the axios api call to ur db in the backend, need to hit the POST route and create a new city, need the underlying route to match what is set up in the express server
         axios
-          .post("http://localhost:4000/api/cities", {
+          .post(`${process.env.REACT_APP_SERVER_URL}/api/cities`, {
             //pass in the object of the new city, containing the actual data that is to be added, for now it is only the name of the city
             city: this.state.inputVal,
             image: this.state.inputImage,

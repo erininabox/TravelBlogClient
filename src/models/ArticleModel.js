@@ -1,4 +1,4 @@
-const url = 'http://localhost:4000/api/cities/';
+const url = `${process.env.REACT_APP_SERVER_URL}/api/cities/`;
 //store logic to make api calls (fetch/axios here)
 class ArticleModel {
     static all() {

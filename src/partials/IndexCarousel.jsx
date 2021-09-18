@@ -1,19 +1,10 @@
 import Slider from 'react-slick';
 import React from 'react'
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
 import { Link, Redirect } from 'react-router-dom'
-import axios from 'axios';
 
 class IndexCarousel extends React.Component {
   state = {redirect: null}
 
-  // handleDelete = (id) => {
-  //   axios.delete(`http://localhost:4000/api/cities/${id}`)
-  //   .then(() => {
-  //    this.props.deleteCity(id)
-  //   })
-  // }
   carouselItems = () => {
     const citiesJSX = this.props.cityData.map((cityObj, idx) => {
       return (
