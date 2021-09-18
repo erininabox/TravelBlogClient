@@ -9,7 +9,7 @@ class SignupPage extends React.Component {
 
   onSubmit = (event) => {
       event.preventDefault();
-      axios.post('http://localhost:4000/signup', {
+      axios.post(`${process.env.REACT_APP_SERVER_URL}/signup`, {
           username: this.state.username,
           password: this.state.password
         })
